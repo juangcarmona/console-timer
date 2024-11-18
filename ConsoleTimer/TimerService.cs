@@ -56,8 +56,11 @@ public class TimerService
         {
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
             {
-                // Para Windows
-                Console.Beep(1000, 500);
+                // Beep sequence for a more noticeable sound
+                Console.Beep(800, 300); // Frequency 800 Hz, duration 300 ms
+                Console.Beep(1000, 300); // Frequency 1000 Hz, duration 300 ms
+                Console.Beep(1200, 300); // Frequency 1200 Hz, duration 300 ms
+                Console.Beep(1500, 500); // Frequency 1500 Hz, duration 500 ms
             }
             else
             {
