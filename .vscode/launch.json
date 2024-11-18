@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/ConsoleTimer/bin/Debug/net8.0/ConsoleTimer.dll",
+            "args": [
+                "3",     // Duration in minutes (for example, 3 minutes)
+                "3"     // Interval in seconds (for example, 3 seconds)
+            ],
+            // "args": [
+            //     "10",     // Duration in minutes (for example, 10 minutes)
+            //     "300"     // Interval in seconds (for example, 5 minutes)
+            // ],
+            "cwd": "${workspaceFolder}/ConsoleTimer",
+            "stopAtEntry": false,
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "launchBrowser": {
+                "enabled": false
+            },
+        }
+    ]
+}
